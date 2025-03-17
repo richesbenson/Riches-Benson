@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CarServ is a car repair service provider with 15 years of experience in the industry. We provide quality servicing, expert workers, and modern equipment."
+    />
+
+    <!-- Favicon  -->
+    <link href="img/about.jpg" rel="icon" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts CDN -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic"
+      rel="stylesheet"
+    />
+
+    <!-- Page Title -->
+    <title>CarServ - Car Repair</title>
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <span
+          ><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</span
+        >
+        <span
+          ><i class="far fa-clock"></i> Mon - Fri : 09.00 AM - 09.00 PM</span
+        >
+      </div>
+      <div class="topbar-right">
+        <span><i class="fas fa-phone"></i> +012 345 6789</span>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="logo"><i class="fas fa-car"></i> <span>CarServ</span></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link"
+            >PAGES <i class="fas fa-angle-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="team.html">Technicians</a></li>
+            <li><a href="testimonial.html">Testimonial</a></li>
+            <li><a href="404.html">404 Page</a></li>
+          </ul>
+        </li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <p class="quote-btn">
+        <a href="#">GET A QUOTE <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </nav>
+    <!-- Slider on Hero -->
+    <div class="hero-slider">
+      <div class="slider-wrapper">
+        <div class="slide slider-1">
+          <div class="slide-content">
+            <div class="text-content">
+            <div class="car-servicing"> // CAR SERVICING // </div>
+              <h2>Qualified Car Repair Service Center</h2>
+              <button>Learn More</button>
+            </div>
+            <div class="image-content">
+              <img src="img/carousel-1.png" alt="Slide 1 Image" />
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slider-2">
+          <div class="slide-content">
+            <div class="text-content">
+              <div class="car-servicing"> // CAR SERVICING // </div>
+              <h2>Qualified Car Wash Service Center</h2>
+              <button>Learn more</button>
+            </div>
+            <div class="image-content">
+              <img src="img/carousel-2.png" alt="Slide 2 Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Controls -->
+      <div class="slider-controls">
+        <button class="control-left">&#10094;</button>
+        <button class="control-right">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- Services Container  -->
+    <div class="services-container">
+      <div class="service-box">
+        <i class="fas fa-certificate"></i>
+        <div class="service-content">
+          <h3>Quality Servicing</h3>
+          <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="service-box active">
+        <i class="fas fa-users-cog"></i>
+        <div class="service-content">
+          <h3>Expert Workers</h3>
+          <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-tools"></i>
+        <div class="service-content">
+          <h3>Modern Equipment</h3>
+          <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    <!-- Services container ends -->
+
+    <!-- About Us Section Begins -->
+    <div class="container">
+      <!-- Left Side (Image) -->
+      <div class="image-section">
+        <img src="img/about.jpg" alt="Car Service" />
+        <div class="experience-box">
+          <span>15</span> Years <br />
+          Experience
+        </div>
+      </div>
+
+      <!-- Right Side (Content) -->
+      <div class="content-section">
+        <h2 class="section-title">// About Us //</h2>
+        <h1 class="main-title">
+          <span class="highlight">CarServ</span> Is The Best Place For Your Auto
+          Care
+        </h1>
+        <p class="description">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+          diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+          lorem sit clita duo justo magna dolore erat amet.
+        </p>
+
+        <div class="features">
+          <div class="feature-item">
+            <div class="feature-number">01</div>
+            <div class="feature-text">
+              <h5>Professional & Expert</h5>
+              <p>Diam dolor diam ipsum sit amet diam et eos</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-number">02</div>
+            <div class="feature-text">
+              <h5>Quality Servicing Center</h5>
+              <p>Diam dolor diam ipsum sit amet diam et eos</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-number">03</div>
+            <div class="feature-text">
+              <h5>Award-Winning Workers</h5>
+              <p>Diam dolor diam ipsum sit amet diam et eos</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="cta-button" aria-label="Read more about   CarServ"
+          >READ MORE →</a
+        >
+      </div>
+    </div>
+
+    <!-- Counter Section begins -->
+    <section class="background-section">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="counter-box">
+          <i class="fas fa-check-circle"></i>
+          <!-- Add your own icons -->
+          <h2 class="counter" data-target="1234">0</h2>
+          <p>Years Experience</p>
+        </div>
+        <div class="counter-box">
+          <i class="fas fa-cogs"></i>
+          <h2 class="counter" data-target="1234">0</h2>
+          <p>Expert Technicians</p>
+        </div>
+        <div class="counter-box">
+          <i class="fas fa-users"></i>
+          <h2 class="counter" data-target="1234">0</h2>
+          <p>Satisfied Clients</p>
+        </div>
+        <div class="counter-box">
+          <i class="fas fa-car"></i>
+          <h2 class="counter" data-target="1234">0</h2>
+          <p>Completed Projects</p>
+        </div>
+      </div>
+    </section>
+    <!-- Counter section ends -->
+
+    <!-- Services -->
+    <section class="services-section">
+      <h3>// OUR SERVICES //</h3>
+      <h1>Explore Our Services</h1>
+      <div class="content-wrapper">
+        <div class="services-menu">
+          <div class="service-tab active" data-service="diagnostic">
+            <i class="fas fa-car"></i> <span>Diagnostic Test</span>
+          </div>
+          <div class="service-tab" data-service="engine">
+            <i class="fas fa-car-side"></i> <span>Engine Servicing</span>
+          </div>
+          <div class="service-tab" data-service="tires">
+            <i class="fas fa-tools"></i> <span>Tires Replacement</span>
+          </div>
+          <div class="service-tab" data-service="oil">
+            <i class="fas fa-oil-can"></i> <span>Oil Changing</span>
+          </div>
+        </div>
+        <div class="service-details">
+          <img id="service-image" src="img/service-1.jpg" alt="Auto Service" />
+          <div class="service-text">
+            <h1 id="service-title">15 Years Of Experience In Auto Servicing</h1>
+            <p id="service-description">
+              Tempor erat elit reburn at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet.
+            </p>
+            <ul>
+              <li>
+                <i class="fa fa-check text-success me-3"></i> Quality Servicing
+              </li>
+              <li>
+                <i class="fa fa-check text-success me-3"></i> Expert Workers
+              </li>
+              <li>
+                <i class="fa fa-check text-success me-3"></i> Modern Equipment
+              </li>
+              <!-- <i class="fa fa-check text-success me-3"></i> -->
+            </ul>
+            <button class="read-more">
+              READ MORE <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="text-content">
+        <h3>
+          Certified and Award Winning <br />
+          Car Repair Service Provider
+        </h3>
+        <p>
+          Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
+          ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum
+          sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et.
+          Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea
+          dolore sanctus sed et. Takimata takimata sanctus sed.
+        </p>
+      </div>
+
+      <!-- Booking Form -->
+      <div class="booking-form">
+        <h2>Book For A Service</h2>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="" disabled selected>Select A Service</option>
+              <option selected>Select A Service</option>
+              <option value="1">Service 1</option>
+              <option value="2">Service 2</option>
+              <option value="3">Service 3</option>
+            </select>
+            <input type="date" required />
+          </div>
+         <textarea placeholder="Special Request "></textarea>
+        <button type="submit" class="Special-Request-btn">BOOK NOW</button>
+      </div>
+    </section>
+
+    <section class="technicians">
+      <h6>// Our Technicians //</h6>
+      <h1>Our Expert Technicians</h1>
+      <div class="technicians-container">
+        <div class="technician-card">
+          <div class="image-container">
+            <img src="img/team-1.jpg" alt="Technician" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="technician-info">
+            <h4>Full Name</h4>
+            <p>Designation</p>
+          </div>
+        </div>
+
+        <div class="technician-card">
+          <div class="image-container">
+            <img src="img/team-2.jpg" alt="Technician" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="technician-info">
+            <h4>Full Name</h4>
+            <p>Designation</p>
+          </div>
+        </div>
+
+        <div class="technician-card">
+          <div class="image-container">
+            <img src="img/team-3.jpg" alt="Technician" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="technician-info">
+            <h4>Full Name</h4>
+            <p>Designation</p>
+          </div>
+        </div>
+
+        <div class="technician-card">
+          <div class="image-container">
+            <img src="img/team-4.jpg" alt="Technician" />
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="technician-info">
+            <h4>Full Name</h4>
+            <p>Designation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <div class="testimonial-container">
+      <h6>// Testimonial //</h6>
+      <h1>Our Clients Say!</h1>
+      <div class="testimonial-slider">
+        <div class="testimonial-wrapper">
+          <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" alt="Client 1" />
+            <h5>Client Name</h5>
+            <p>Profession</p>
+            <div class="testimonial-text">
+              Tempor erat elitr rebum at clita. Lorem ipsum dolor sit amet
+              consectetur.l
+            </div>
+          </div>
+          <div class="testimonial-item active">
+            <img src="img/testimonial-2.jpg" alt="Client 2">
+            <h5>Client Name</h5>
+            <p>Profession</p>
+            <div class="testimonial-text active">Tempor erat elitr rebum at clita...</div>
+        </div>
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" alt="Client 3" />
+            <h5>Client Name</h5>
+            <p>Profession</p>
+            <div class="testimonial-text">
+              Tempor erat elitr rebum at clita. Lorem ipsum dolor sit amet
+              consectetur.
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" alt="Client 4" />
+            <h5>Client Name</h5>
+            <p>Profession</p>
+            <div class="testimonial-text">
+              Tempor erat elitr rebum at clita. Lorem ipsum dolor sit amet
+              consectetur.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dots Navigation -->
+      <div class="testimonial-dots">
+        <span class="dot active-dot" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+      </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top">
+      <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!------scroll to to end here -->
+
+   <!-- Footer Start -->
+    <div class="inyene-footer">
+      <div class="inyene-footer-container">
+  
+    <!-- Address Section -->
+    <div class="inyene-footer-section">
+      <h4>Address</h4>
+      <p><i class="fa fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+      <p><i class="fa fa-phone-alt"></i> +012 345 67890</p>
+      <p><i class="fa fa-envelope"></i> info@example.com</p>
+      <div class="inyene-social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Opening Hours -->
+    <div class="inyene-footer-section">
+    <h4>Opening Hours</h4>
+    <h5 class="opening-day">Monday - Friday:</h5>
+    <p>09.00 AM - 09.00 PM</p>
+    <h5 class="opening-day">Saturday - Sunday:</h5>
+    <p>09.00 AM - 12.00 PM</p>
+  </div>
+
+    <!-- Services Section -->
+    <div class="inyene-footer-section">
+      <h4>Services</h4>
+      <ul class="inyene-services">
+        <li><i class="fas fa-chevron-right"></i> <span>Diagnostic Test</span></li>
+        <li><i class="fas fa-chevron-right"></i> <span>Engine Servicing</span></li>
+        <li><i class="fas fa-chevron-right"></i> <span>Tires Replacement</span></li>
+        <li><i class="fas fa-chevron-right"></i> <span>Oil Changing</span></li>
+        <li><i class="fas fa-chevron-right"></i> <span>Vacuum Cleaning</span></li>
+      </ul>
+    </div>
+
+   <!-- Newsletter Section -->
+<div class="inyene-footer-section">
+    <h4>Newsletter</h4>
+    <p>Dolor amet sit justo amet elitr clita ipsum elitr est</p>
+    <div class="inyene-newsletter-form">
+        <div>Your Email</div> <!-- Replacing input with div -->
+        <button>Sign Up</button>
+    </div>
+</div>
+
+<!-- Copyright & Menu -->
+<div class="inyene-copyright">
+    <div>
+        &copy; <a href="#">Your Site Name</a> All Rights Reserved.
+        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+    </div>
+    <div class="inyene-footers-menu">
+        <a href="#">Home</a>
+        <a href="#">Cookies</a>
+        <a href="#">Help</a>
+        <a href="#">FAQs</a>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html
+
+
+
